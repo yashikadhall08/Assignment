@@ -1,0 +1,16 @@
+Steps to run the application
+1. npm install
+2. connect to your postgres database by changing credentials in app.js
+
+APIs
+1. /create-tables - To create the tables in the database with empty data
+2. /create-users - To create a new user 
+3. /create-contents - To create or upload new content
+4. /create-chapters - To create chapters for the content(series)
+5. /create-metadata - To create metadata for chapters
+6. /create-chaptersunlocked - To define number of unlocked chapters for a particular user for a particular content
+7. /getmeta-data/:contentId - To get metadata for the unlocked chapters of a content(series)
+8. /user/accessable-data/:userId - To get number of total chapters and number of unlocked chapters and to get the metadata for the unlocked chapters
+9. /user/get-users - To get all the users and their deatails such as email, content unlocked
+10. /daily-pass/:userId/:contentId - To unlock more chapters for a content(series) 
+
